@@ -1,12 +1,18 @@
 process.stdout.write('prompt >');
 
-process.stdin.on('data', (data) => {
-  const cmd = data.toString().trim();
+// process.stdin.on('data', (data) => {
+//   // const cmd = data.toString().trim();
 
-  process.stdout.write('You typed: ' + cmd);
-  process.stdout.write('\nprompt >');
+//   // process.stdout.write('You typed: ' + cmd);
+//   // process.stdout.write('\nprompt >');
 
-  if (cmd === 'pwd') {
-    process.stdout.write(process.cwd());
-  }
-})
+
+// })
+
+//const pwd = require("./pwd.js");
+//pwd();
+
+// const ls=require("./ls.js")
+// ls()
+const cat=require("./cat.js")
+cat()
